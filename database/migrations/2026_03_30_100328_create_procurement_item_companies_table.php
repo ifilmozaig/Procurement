@@ -1,0 +1,29 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::create('procurement_item_companies', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('procurement_item_id')
+                  ->constrained('procurement_items')
+                  ->cascadeOnDelete();
+            $table->foreignId('company_id')
+                  ->constrained('companies')
+                  ->cascadeOnDelete();
+            $table->timestamps();
+
+            $table->unique(['procurement_item_id', 'company_id']);
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('procurement_item_companies');
+    }
+};
