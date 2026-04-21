@@ -17,25 +17,25 @@ class DatabaseSeeder extends Seeder
     {
         User::factory()->create([
             'name' => 'Super Admin',
-            'email' => 'superadmin@example.com',
+            'email' => 'superadmin@konnco.com',
             'role' => 'super_admin',
         ]);
 
         User::factory()->create([
             'name' => 'Finance',
-            'email' => 'finance@example.com',
+            'email' => 'finance@konnco.com',
             'role' => 'finance',
         ]);
 
         User::factory()->create([
             'name' => 'Finance Manager',
-            'email' => 'financemanager@example.com',
+            'email' => 'financemanager@konnco.com',
             'role' => 'finance_manager',
         ]);
 
         User::factory()->create([
             'name' => 'HRGA',
-            'email' => 'hrga@example.com',
+            'email' => 'hrga@konnco.com',
             'role' => 'hrga',
         ]);
 
