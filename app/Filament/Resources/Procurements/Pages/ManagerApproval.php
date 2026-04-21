@@ -13,7 +13,7 @@ use Filament\Tables\Contracts\HasTable;
 class ManagerApproval extends Page implements HasTable
 {
     use InteractsWithTable;
-    protected string $view = 'admin.manager-approval';
+    protected string $view = 'Admin.manager-approval';
     public static function getRoutePath(Panel $panel): string
         {
             return 'manager-approval';
