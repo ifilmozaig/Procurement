@@ -86,7 +86,7 @@ class AdminPanelProvider extends PanelProvider
                     // finance_manager tetap bisa lihat menu & akses halaman Realisasi
                     ->visible(fn (): bool =>
                         auth()->check() &&
-                        auth()->user()->hasRole(['hrga', 'finance', 'finance_manager', 'super_admin'])
+                        auth()->user()->hasRole(['hrga', 'finance', 'finance_manager', 'super_admin', 'accounting'])
                     )
                     ->sort(6),
             ])

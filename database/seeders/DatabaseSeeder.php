@@ -39,5 +39,11 @@ class DatabaseSeeder extends Seeder
             'role' => 'hrga',
         ]);
 
+        User::factory()->create([
+            'name' => 'accounting',
+            'email' => 'accounting@konnco.com',
+            'role' => 'accounting',
+        ]);
+
     }
 }
