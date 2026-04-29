@@ -39,6 +39,27 @@ class ProcurementsTable
                     ->badge()
                     ->searchable()
                     ->sortable(),
+                TextColumn::make('kategori_barang')
+                    ->label('Kategori Barang')
+                    ->badge()
+                    ->separator(',')
+                    ->getStateUsing(function (Procurement $record): string {
+                        $categories = $record->items
+                            ->map(fn ($item) => $item->masterItem?->category?->name ?? 'Lainnya')
+                            ->unique()
+                            ->values();
+
+                        $max = 2;
+                        $shown = $categories->take($max);
+                        $remaining = $categories->count() - $max;
+
+                        if ($remaining > 0) {
+                            return $shown->push("+{$remaining} lagi")->implode(',');
+                        }
+
+                        return $shown->implode(',');
+                    })
+                    ->toggleable(),
                 TextColumn::make('procurement_number')
                     ->label('Procurement Number')
                     ->searchable()
