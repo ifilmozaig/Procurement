@@ -29,7 +29,7 @@ class ExpenseMasterResource extends Resource
     private static array $editRoles = ['hrga', 'finance', 'super_admin'];
 
     // Role yang bisa akses halaman Realisasi (termasuk finance_manager)
-    private static array $realisasiRoles = ['hrga', 'finance', 'finance_manager', 'super_admin'];
+    private static array $realisasiRoles = ['hrga', 'finance', 'finance_manager', 'super_admin','accounting'];
 
     public static function getNavigationGroup(): ?string
     {

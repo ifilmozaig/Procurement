@@ -41,7 +41,7 @@ class ProcurementResource extends Resource
     protected static ?string $recordTitleAttribute = 'procurement_number';
     public static function shouldRegisterNavigation(): bool
     {
-        return !auth()->user()->hasRole(['finance', 'finance_manager']);
+        return !auth()->user()->hasRole(['finance', 'finance_manager','accounting']);
     }
 
     public static function canViewAny(): bool
