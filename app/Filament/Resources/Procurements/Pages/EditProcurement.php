@@ -10,7 +10,7 @@ use Filament\Notifications\Notification;
 class EditProcurement extends EditRecord
 {
     protected static string $resource = ProcurementResource::class;
-    protected string $view = 'Admin.edit-procurement';
+    protected string $view = 'admin.edit-procurement';
     protected function getHeaderActions(): array
     {
         return [

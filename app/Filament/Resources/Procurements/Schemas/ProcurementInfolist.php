@@ -427,7 +427,7 @@ class ProcurementInfolist
 
                 ViewEntry::make('image_lightbox')
                     ->label('')
-                    ->view('Admin.image-lightbox')
+                    ->view('admin.image-lightbox')
                     ->columnSpanFull(),
 
                 TextEntry::make('rejection_reason')

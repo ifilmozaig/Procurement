@@ -23,7 +23,7 @@ class RealisasiPengadaan extends Page
 
     public function getView(): string
     {
-        return 'Admin.realisasi-pengadaan';
+        return 'admin.realisasi-pengadaan';
     }
 
     public string $filterCompany  = 'all';

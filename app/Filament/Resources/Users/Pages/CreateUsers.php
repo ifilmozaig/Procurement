@@ -9,7 +9,7 @@ use Filament\Actions;
 class CreateUsers extends CreateRecord
 {
     protected static string $resource = UserResource::class;
-    protected string $view = 'Admin.create-users';
+    protected string $view = 'admin.create-users';
     protected function getHeaderActions(): array
         {
             return [

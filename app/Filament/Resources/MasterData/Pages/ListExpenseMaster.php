@@ -21,6 +21,6 @@ class ListExpenseMaster extends ListRecords
 
     public function getView(): string
     {
-        return 'Admin.list';
+        return 'admin.list';
     }
 }

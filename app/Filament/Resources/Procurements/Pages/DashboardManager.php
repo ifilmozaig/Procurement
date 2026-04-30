@@ -6,7 +6,7 @@ use Filament\Panel;
 
 class DashboardManager extends Page
 {
-    protected string $view = 'Admin.dashboard-manager';
+    protected string $view = 'admin.dashboard-manager';
     public static function getRoutePath(Panel $panel): string
         {
             return 'dashboard-manager';

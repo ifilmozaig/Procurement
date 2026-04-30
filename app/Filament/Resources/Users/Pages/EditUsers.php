@@ -11,7 +11,7 @@ class EditUsers extends EditRecord
 {
     protected static string $resource = UserResource::class;
 
-    protected string $view = 'Admin.edit-users';
+    protected string $view = 'admin.edit-users';
 
     protected function mutateFormDataBeforeFill(array $data): array
     {

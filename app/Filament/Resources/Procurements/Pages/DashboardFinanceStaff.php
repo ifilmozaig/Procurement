@@ -4,7 +4,7 @@ namespace App\Filament\Resources\Procurements\Pages;
 use Filament\Pages\Page;
 class DashboardFinanceStaff extends Page
 {
-    protected string $view = 'Admin.dashboard-finance-staff';
+    protected string $view = 'admin.dashboard-finance-staff';
     protected static string $routePath = 'dashboard-finance-staff';
     public static function canAccess(): bool
         {
