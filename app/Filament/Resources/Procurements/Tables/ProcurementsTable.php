@@ -39,8 +39,8 @@ class ProcurementsTable
                     ->badge()
                     ->searchable()
                     ->sortable(),
-                TextColumn::make('kategori_barang')
-                    ->label('Kategori Barang')
+                TextColumn::make('item_category')
+                    ->label('item category')
                     ->badge()
                     ->separator(',')
                     ->getStateUsing(function (Procurement $record): string {
