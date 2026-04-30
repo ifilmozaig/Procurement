@@ -15,7 +15,7 @@ class AccountProfileWidget extends Widget implements HasForms
 {
     use InteractsWithForms;
 
-    protected string $view = 'Admin.account-profile-widget';
+    protected string $view = 'admin.account-profile-widget';
 
     protected int | string | array $columnSpan = 1;
 

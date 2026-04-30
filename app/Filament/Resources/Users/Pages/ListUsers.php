@@ -11,7 +11,7 @@ use Filament\Notifications\Notification;
 class ListUsers extends ListRecords
 {
     protected static string $resource = UserResource::class;
-    protected string $view = 'Admin.list-users';
+    protected string $view = 'admin.list-users';
     protected function getHeaderActions(): array
     {
         return [

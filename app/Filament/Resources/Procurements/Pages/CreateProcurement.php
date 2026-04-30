@@ -9,7 +9,7 @@ use Filament\Actions;
 class CreateProcurement extends CreateRecord
 {
     protected static string $resource = ProcurementResource::class;
-    protected string $view = 'Admin.create-procurement';
+    protected string $view = 'admin.create-procurement';
 
     protected function mutateFormDataBeforeCreate(array $data): array
     {

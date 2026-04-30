@@ -11,7 +11,7 @@ class ListCompanies extends ListRecords
     protected static string $resource = CompanyResource::class;
     public function getView(): string
     {
-        return 'Admin.list-companies'; 
+        return 'admin.list-companies'; 
     }
    
     protected function getHeaderActions(): array

@@ -11,7 +11,7 @@ class ListVendors extends ListRecords
     protected static string $resource = VendorResource::class;
      public function getView(): string
     {
-        return 'Admin.list-vendors'; 
+        return 'admin.list-vendors'; 
     }
     protected function getHeaderActions(): array
     {

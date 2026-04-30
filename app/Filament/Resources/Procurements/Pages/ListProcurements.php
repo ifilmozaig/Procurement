@@ -11,7 +11,7 @@ class ListProcurements extends ListRecords
 
     public function getView(): string
     {
-        return 'Admin.list-procurements';
+        return 'admin.list-procurements';
     }
 
     protected function getHeaderActions(): array
